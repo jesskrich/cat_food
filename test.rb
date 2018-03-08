@@ -32,7 +32,7 @@ class Test
       tabby          = Cat.new(breed: 'tabby',          age: 15)
       person         = Person.new(cats: [reverse_growth, tabby])
 
-      expected_food = 32
+      expected_food = 17
 
       actual_food = Calculator.new(person: person).calculate
 
