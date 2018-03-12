@@ -84,7 +84,7 @@ class Test
       if tabby.breed == "tabby"
         puts "passed test case six"
       else
-        puts "test case five failed. expected #{tabby.breed}, got nil"
+        puts "test case six failed. expected #{tabby.breed}, got nil"
       end
     end
   end
