@@ -9,6 +9,9 @@ class Test
       test_case_one
       test_case_two
       test_case_three
+      test_case_four
+      test_case_five
+      test_case_six
     end
 
     def test_case_one
@@ -52,6 +55,36 @@ class Test
         puts "passed test case three"
       else
         puts "test case three failed. expected #{expected_food}, got #{actual_food}"
+      end
+    end
+
+    def test_case_four
+      tabby = Cat.new(breed: 'tabby', age: -5)
+
+      if tabby.age == nil
+        puts "passed test case four"
+      else
+        puts "test case four failed. expected nil, got #{tabby.age}"
+      end
+    end
+
+    def test_case_five
+      tabby = Cat.new(breed: 'tabbi', age: 4)
+
+      if tabby.breed == nil
+        puts "passed test case five"
+      else
+        puts "test case five failed. expected nil, got #{tabby.breed}"
+      end
+    end
+
+    def test_case_six
+      tabby = Cat.new(breed: 'TABBY', age: 1)
+
+      if tabby.breed == "tabby"
+        puts "passed test case six"
+      else
+        puts "test case five failed. expected #{tabby.breed}, got nil"
       end
     end
   end
